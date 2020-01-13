@@ -1,5 +1,5 @@
 
-image: trenpixster/elixir:latest
+image: elixir:latest
 
 services:
   - postgres:latest
