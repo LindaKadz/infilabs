@@ -4,8 +4,8 @@ use Mix.Config
 config :infilabs, Infilabs.Repo,
   username: System.get_env("POSTGRES_USER") || "postgres",
   password: System.get_env("POSTGRES_PASSWORD") || "postgres",
-  database: System.get_env("POSTGRES_DB") ||  "infilabs_test",
-  hostname: hostname: if(System.get_env("CI"), do: "postgres", else: "localhost"),
+  database: System.get_env("POSTGRES_DB") || "infilabs_test",
+  hostname: if(System.get_env("CI"), do: "postgres", else: "localhost"),
   pool: Ecto.Adapters.SQL.Sandbox
 
 # We don't run a server during test. If one is required,
